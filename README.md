@@ -41,7 +41,7 @@ notepad C:\caminho\para\o\tema\meuTema.omp.json
 <br>
 
 ## Instrução de uso
-para iniciar sempre o terminal com seu tema, digite o seguinte comando  
+para sempre iniciar o terminal com seu tema, digite o seguinte comando  
 no arquivo de configuração do powershell 
 
 `Microsoft.PowerShell_profile.ps1`
@@ -60,13 +60,15 @@ Parâmetro | Descrição
 
 na linha de comando:
 
+`exemplo`
 ``` ps1
-
+oh-my-posh config export image --author "seu nome" --background-color 222222 --output meu_tema.png
 ```
 
 <br>
 
 ## Configurações do meu tema
-foto
+![meu_tema](https://github.com/user-attachments/assets/41104401-9145-456a-832f-dfccd123b8d3)
+
 
 [ver configurações](custom_theme.omp.json)
