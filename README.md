@@ -20,24 +20,29 @@ configurações necessárias para personalização de um terminal
 ## Instrução de instalação
 
 ### Pré-requisitos
-- **Node.js** - [Tutorial de instalação](https://nodejs.org/pt)
+- **Oh-My-Posh** - [Tutorial de instalação - Windows](https://youtu.be/rHCY562FDVM?si=nqZXS0KNNmJQMe1a)
 
 <br>
 
 ### Etapas
-#### 1. crie seu projeto Node.js
+**1. para personalizar seu tema, basta abrir o arquivo JSON com o editor de código de sua  
+preferência e estilizá-lo da maneira que deseja**
 
-`repositorios\clonados\CRUD_MySQL`
 ``` bash
-npm init
+# exemplo vscode
+code C:\caminho\para\o\tema\meuTema.omp.json
+
+# exemplo notepad
+notepad C:\caminho\para\o\tema\meuTema.omp.json
 ```
 
 <br>
 
 ## Instrução de uso
-Inicie o servidor local e veja [API Endpoints](#api-endpoints) para testar as respostas da api
+para iniciar automaticamente o terminal com seu tema, digite o seguinte comando  
+no arquivo de configuração do powershell 
 
-`repositorios\clonados\CRUD_MySQL\src`
-``` bash
-node server.js
+`Microsoft.PowerShell_profile.ps1`
+``` ps1
+oh-my-posh init pwsh --config 'C:\caminho\para\o\tema\meuTema.omp.json' | Invoke-Expression
 ```
