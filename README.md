@@ -3,7 +3,7 @@
 ### licença e tecnologias utilizadas
 <img src="https://img.shields.io/github/license/henrygoncalvess/Custom_Terminal?style=for-the-badge&labelColor=gray&color=97ca00"> <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/powershell-7.5-blue?style=for-the-badge&logo=powershell&logoColor=darkblue&labelColor=gray"></a>
 
-configurações necessárias para personalização de um terminal
+instalação e configuração necessária para personalização de um terminal
   
 <details open="open">
 <summary>Tabela de Conteúdos</summary>
@@ -12,6 +12,8 @@ configurações necessárias para personalização de um terminal
   - [Pré-requisitos](#pré-requisitos)
   - [Etapas](#etapas)
 - [Instrução de uso](#instrução-de-uso)
+- [Exportar uma imagem do tema](#exportar-uma-imagem-do-tema)
+- [Configurações do meu tema](#configurações-do-meu-tema)
   
 </details>
 
@@ -39,10 +41,32 @@ notepad C:\caminho\para\o\tema\meuTema.omp.json
 <br>
 
 ## Instrução de uso
-para iniciar automaticamente o terminal com seu tema, digite o seguinte comando  
+para iniciar sempre o terminal com seu tema, digite o seguinte comando  
 no arquivo de configuração do powershell 
 
 `Microsoft.PowerShell_profile.ps1`
 ``` ps1
 oh-my-posh init pwsh --config 'C:\caminho\para\o\tema\meuTema.omp.json' | Invoke-Expression
 ```
+
+<br>
+
+## Exportar uma imagem do tema
+Parâmetro | Descrição
+:-- | :--
+`--author` | o nome do criador, adicionado depois de "ohmyposh.dev", dentro da imagem
+`--background-color` | a cor de fundo hexadecimal a ser usada (por exemplo #222222)
+`--output` | nome do arquivo para exportar (por exemplo meu_tema.png)
+
+na linha de comando:
+
+``` ps1
+
+```
+
+<br>
+
+## Configurações do meu tema
+foto
+
+[ver configurações](custom_theme.omp.json)
