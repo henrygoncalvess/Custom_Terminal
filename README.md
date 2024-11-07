@@ -4,6 +4,7 @@
 <img src="https://img.shields.io/github/license/henrygoncalvess/Custom_Terminal?style=for-the-badge&labelColor=gray&color=97ca00"> <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/powershell-7.5-blue?style=for-the-badge&logo=powershell&logoColor=darkblue&labelColor=gray"></a>
 
 instalação e configuração necessária para personalização de um terminal
+instalação e configuração necessária para personalização de um terminal
   
 <details open="open">
 <summary>Tabela de Conteúdos</summary>
@@ -12,6 +13,8 @@ instalação e configuração necessária para personalização de um terminal
   - [Pré-requisitos](#pré-requisitos)
   - [Etapas](#etapas)
 - [Instrução de uso](#instrução-de-uso)
+- [Exportar uma imagem do tema](#exportar-uma-imagem-do-tema)
+- [Configurações do meu tema](#configurações-do-meu-tema)
 - [Exportar uma imagem do tema](#exportar-uma-imagem-do-tema)
 - [Configurações do meu tema](#configurações-do-meu-tema)
   
