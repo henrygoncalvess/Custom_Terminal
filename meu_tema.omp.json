@@ -82,14 +82,14 @@
         },
         {
           "properties": {
-            "branch_icon": "\ue725 ",
+            "branch_icon": "",
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
             "fetch_worktree_count": true
           },
           "style": "diamond",
-          "template": "<#7d7d7d>on </>{{ .HEAD }}{{ if .Working.Changed }}<red> \uf044 {{ .Working.String }}</>{{ end }}<lightGreen>{{ if and (.Working.Changed) (.Staging.Changed) }}</>{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "template": "<#7d7d7d>on</> <#ffffff>git(</>{{ .HEAD }}<#ffffff>)</>{{ if .Working.Changed }}<red> \uf044 {{ .Working.String }}</>{{ end }}<lightGreen>{{ if and (.Working.Changed) (.Staging.Changed) }}</>{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "foreground": "#ff6f00",
           "type": "git"
         }

@@ -71,6 +71,6 @@ oh-my-posh config export image --author "seu nome" --background-color 222222 --o
 <br>
 
 ## Configurações do meu tema
-![meu_tema](https://github.com/user-attachments/assets/40d8fec5-93ac-4047-897f-1f3916ad14a3)
+![meu_tema](https://github.com/user-attachments/assets/e87bd9b2-2d21-4f3f-8ff9-196ae0e7d38e)
 
 [ver configurações](meu_tema.omp.json)
