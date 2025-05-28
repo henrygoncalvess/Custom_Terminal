@@ -1,2 +1,0 @@
-# configuração para carregar o tema automaticamente ao iniciar o terminal e exemplo de caminho de arquivo do tema
-oh-my-posh init pwsh --config 'C:\Users\usuário\AppData\Local\Programs\oh-my-posh\themes\meu_tema.omp.json' | Invoke-Expression
