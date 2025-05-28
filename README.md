@@ -1,63 +1,92 @@
 # Personalização de Terminal
 
-### licença e tecnologias utilizadas
-<img src="https://img.shields.io/github/license/henrygoncalvess/Custom_Terminal?style=for-the-badge&labelColor=gray&color=97ca00"> <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/powershell-7.5-blue?style=for-the-badge&logo=powershell&logoColor=darkblue&labelColor=gray"></a>
+> Configurações do meu tema
 
-instalação e configuração necessária para personalização de um terminal
-instalação e configuração necessária para personalização de um terminal
-  
-<details open="open">
-<summary>Tabela de Conteúdos</summary>
-  
-- [Instrução de instalação](#instrução-de-instalação)
+![my theme config](/my-theme-photo.png)
+
+## 📋 Conteúdo
+
+- [Visão Geral](#Overview)
+- [Instrução de instalação](#installation)
   - [Pré-requisitos](#pré-requisitos)
   - [Etapas](#etapas)
-- [Instrução de uso](#instrução-de-uso)
-- [Exportar uma imagem do tema](#exportar-uma-imagem-do-tema)
-- [Configurações do meu tema](#configurações-do-meu-tema)
-- [Exportar uma imagem do tema](#exportar-uma-imagem-do-tema)
-- [Configurações do meu tema](#configurações-do-meu-tema)
+- [Instrução de uso](#use)
+- [Exportar uma imagem do tema](#export-image)
+- [Configurações do meu tema](#theme-config)
   
-</details>
+<br>
+
+<a name="Overview"></a>
+## 🔍 Visão Geral
+
+Instalação e configurações necessárias para a exportação, importação e personalização de um terminal.
 
 <br>
 
-## Instrução de instalação
+<a name="installation"></a>
+## ⚙️ Instrução de instalação
 
 ### Pré-requisitos
-- **Oh-My-Posh** - [Tutorial de instalação - Windows](https://youtu.be/rHCY562FDVM?si=nqZXS0KNNmJQMe1a)
+**Oh-My-Posh**  
+🎥 [Tutorial de instalação - Windows](https://youtu.be/rHCY562FDVM?si=nqZXS0KNNmJQMe1a)  
+📄 [Tutorial de instalação - Linux](https://ohmyposh.dev/docs/installation/linux)
 
 <br>
 
 ### Etapas
-**1. para personalizar seu tema, basta abrir o arquivo JSON assim como foi mostrado no  
-tutorial acima e com o editor de código de sua preferência estilizá-lo da maneira que deseja**
+para personalizar seu tema, basta importar o arquivo JSON dele, enviar para algum  
+diretório e com o editor de código de sua preferência estilizá-lo da maneira que deseja
 
+`Para exportar o arquivo do tema para um diretório:`
 ``` bash
-# exemplo vscode
-code C:\caminho\para\o\tema\meuTema.omp.json
+# linux
+oh-my-posh config export --output ~/caminho/para/o/tema/meu-tema.omp.json
 
-# exemplo notepad
-notepad C:\caminho\para\o\tema\meuTema.omp.json
+#windows
+oh-my-posh config export --output C:\caminho\para\o\tema\meu-tema.omp.json
+```
+
+`Para editar o arquivo: (com vscode)`
+```bash
+# Linux
+code ~/caminho/para/o/tema/meu-tema.omp.json
+
+# Windows
+code C:\caminho\para\o\tema\meu-tema.omp.json
 ```
 
 <br>
 
-## Instrução de uso
+<a name="use"></a>
+## 📜 Instrução de uso
+
+### Linux
+
+para iniciar o terminal com seu tema todas as vezes, digite o seguinte comando  
+no arquivo de configuração do perfil
+
+**Pode ser:** `~/.bashrc` `~/.profile` ou `~/.bash_profile`
+``` bashrc
+eval "$(oh-my-posh init bash --config ~/caminho/para/o/tema/meu-tema.omp.json)"
+```
+
+### Windows
+
 para iniciar o terminal com seu tema todas as vezes, digite o seguinte comando  
 no arquivo de configuração do powershell 
 
-`Microsoft.PowerShell_profile.ps1`
+`C:\Users\Usuario\Documents\Powershell\Microsoft.PowerShell_profile.ps1`
 ``` ps1
-oh-my-posh init pwsh --config 'C:\caminho\para\o\tema\meuTema.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\caminho\para\o\tema\meu-tema.omp.json' | Invoke-Expression
 ```
 
 <br>
 
-## Exportar uma imagem do tema
+<a name="export-image"></a>
+## 📷 Exportar uma imagem do tema
 Parâmetro | Descrição
 :-- | :--
-`--author` | o nome do criador, adicionado depois de "ohmyposh.dev", dentro da imagem
+`--author` | o nome do criador, aparece depois de "ohmyposh.dev", dentro da imagem
 `--background-color` | a cor de fundo hexadecimal a ser usada (_por exemplo #222222_)
 `--output` | nome do arquivo para exportar (_por exemplo meu_tema.png_)
 
@@ -70,7 +99,21 @@ oh-my-posh config export image --author "seu nome" --background-color 222222 --o
 
 <br>
 
-## Configurações do meu tema
-![meu_tema](https://github.com/user-attachments/assets/e87bd9b2-2d21-4f3f-8ff9-196ae0e7d38e)
+<a name="theme-config"></a>
+## ⚙️ Configurações do meu tema
 
-[ver configurações](meu_tema.omp.json)
+([**clique aqui**](my-theme.omp.json)) para acessar as configurações do tema
+
+<br>
+
+<a name="license"></a>
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](https://github.com/henrygoncalvess/AI-photos-community/blob/main/LICENSE).
+
+---
+
+<div align="center">
+  <p>Feito com ❤️ por <a href="https://github.com/henrygoncalvess">Henry Gonçalves</a></p>
+  <p>Deixe uma ⭐ no repositório se ele for útil para você!</p>
+</div>
